@@ -7,22 +7,23 @@
 -- Return a table with the following columns: product_id, first_year, quantity, and price.
 -- Return the result in any order.
 
-with YearRank as (
+WITH YearRank as (
     SELECT 
         product_id,
+        year,
         quantity,
         price,
-        year,
-        DENSE_RANK() OVER (partition by product_id order by year asc) as year_rank
-    FROM
-        Sales 
+        dense_rank() over (partition by product_id order by year ) as year_number
+    FROM 
+        Sales
 )
-SELECT 
+
+SELECT
     product_id,
-    quantity,
     year as first_year,
-    price
+    quantity,
+    price 
 FROM 
     YearRank 
 WHERE 
-    year_rank=1;
+    year_number=1;
