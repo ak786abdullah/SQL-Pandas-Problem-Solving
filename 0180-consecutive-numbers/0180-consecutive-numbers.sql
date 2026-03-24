@@ -1,18 +1,17 @@
 -- Find all numbers that appear at least three times consecutively.
 
 -- Return the result table in any order.
-
-with sequencedlogs as (
-SELECT 
-    num, 
-    lead(num) over (order by id) as l1,
-    lead(num,2) over (order by id) as l2
-FROM
-    LOGS 
+WITH sequence as (
+    SELECT 
+        num,
+        lead(num) OVER (ORDER BY id) as second_num,
+        lead(num,2) OVER (ORDER BY id) third_num
+    FROM
+        Logs
 )
-SELECT 
-    distinct num as ConsecutiveNums
-from 
-sequencedlogs
-where 
-    num= l1 and l1=l2  ;
+SELECT DISTINCT
+    num AS ConsecutiveNums
+FROM 
+    sequence
+WHERE 
+    num=second_num AND num =third_num;
