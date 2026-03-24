@@ -2,13 +2,12 @@
 
 -- Return the result table in any order.
 SELECT
-    e.name
-FROM
-    Employee as e
-    join Employee as m
-    on e.id =m.managerId
-group by 
-    m.managerId
-Having 
-    count(m.managerId)>= 5 ;
-
+    m.name
+FROM 
+    Employee m
+    join Employee e
+    on m.id=e.managerId
+GROUP BY 
+    e.managerId,m.name 
+HAVING 
+    COUNT(e.managerId) >=5;
