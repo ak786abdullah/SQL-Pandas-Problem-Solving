@@ -3,9 +3,9 @@
 -- Return the result table in any order.
 SELECT 
     customer_id
-FROM
-    Customer
+FROM 
+    Customer 
 GROUP BY 
-    customer_id
+    customer_id 
 HAVING 
-    COUNT(distinct product_key) = (SELECT COUNT(*) FROM Product)  ;
+    COUNT(DISTINCT product_key)=(SELECT COUNT(product_key) FROM Product)
