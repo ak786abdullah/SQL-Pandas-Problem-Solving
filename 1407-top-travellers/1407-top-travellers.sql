@@ -9,6 +9,6 @@ FROM
     LEFT JOIN Rides r 
     on u.id=r.user_id
 GROUP BY 
-    u.id,u.name
+    u.id
 ORDER BY 
     travelled_distance DESC,u.name ASC;
