@@ -2,11 +2,11 @@
 
 -- Return the result table sorted by id in ascending order.
 
-SELECT
-    DISTINCT author_id as id
+SELECT 
+    DISTINCT author_id AS id
 FROM 
-    views 
-where 
-    author_id=viewer_id
-order by 
-    author_id asc;
+    Views
+WHERE 
+    author_id = viewer_id
+ORDER BY 
+    id ASC ;
