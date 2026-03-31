@@ -15,5 +15,5 @@ WHERE
     total_weight <=1000
 ORDER BY 
     turn DESC 
-    LIMIT 1;
+LIMIT 1;
 
