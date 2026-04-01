@@ -24,4 +24,4 @@ SELECT
 FROM 
     AcCounts
 WHERE
-    income > 50000
+    income > 50000;
