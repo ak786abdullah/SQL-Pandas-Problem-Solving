@@ -9,8 +9,6 @@ WITH last_3_review AS (
     ROW_NUMBER() OVER (PARTITION BY e.employee_id ORDER BY p.review_date DESC) AS rnk
     FROM
     employees e join performance_reviews p ON e.employee_id =p.employee_id
-    ORDER BY 
-    review_date
 )
 SELECT 
     employee_id,
