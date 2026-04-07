@@ -1,4 +1,5 @@
 # Write your MySQL query statement below
+-- LAST THREE REVIEW OF EACH EMPLOYEE 
 WITH last_3_review AS ( 
     SELECT 
     e.employee_id AS employee_id,
