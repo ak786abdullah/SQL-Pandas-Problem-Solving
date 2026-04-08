@@ -1,4 +1,5 @@
 WITH firstpositive AS (
+    -- Find the absolute first positive test date for each patient
     SELECT 
         patient_id,
         MIN(test_date) AS first_pos_date
@@ -9,6 +10,7 @@ WITH firstpositive AS (
     GROUP BY 
         patient_id
 ),firstnegitive AS (
+    -- Find the first negative test date that occurs AFTER the first positive test
     SELECT 
         t.patient_id,
         MIN(test_date) AS first_ng_date
@@ -23,6 +25,7 @@ WITH firstpositive AS (
         t.patient_id
 
 )
+-- Join everything together and calculate the recovery time
 SELECT 
     p.patient_id,
     p.patient_name,
