@@ -11,7 +11,7 @@ FROM
     JOIN productinfo C ON A.product_id=C.product_id
     JOIN productinfo D ON B.product_id=D.product_id
 WHERE 
-    B.product_id > A.product_id
+    B.product_id < A.product_id
 GROUP BY 
     A.product_id, B.product_id
 HAVING 
