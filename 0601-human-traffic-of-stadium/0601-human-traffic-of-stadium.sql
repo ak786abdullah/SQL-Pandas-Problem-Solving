@@ -15,7 +15,7 @@ WITH base AS (
 
 ) 
 SELECT 
-    id,
+    DISTINCT id,
     visit_date,
     people 
 FROM 
