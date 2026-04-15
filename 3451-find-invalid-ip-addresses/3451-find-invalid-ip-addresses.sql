@@ -1,5 +1,5 @@
 SELECT 
-    ip, 
+    ip,
     COUNT(*) AS invalid_count
 FROM 
     logs
@@ -8,5 +8,4 @@ WHERE
 GROUP BY 
     ip
 ORDER BY 
-    invalid_count DESC, 
-    ip DESC;
+    invalid_count DESC ,ip DESC
