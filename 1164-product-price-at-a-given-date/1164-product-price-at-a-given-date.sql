@@ -1,34 +1,32 @@
--- Initially, all products have price 10.
-
--- Write a solution to find the prices of all products on the date 2019-08-16.
-
--- Return the result table in any order.
-WITH RankPrices as(
+/* Write your T-SQL query statement below */
+-- FIND THE LATEST PRICE OF EACH PRODUCT WHERE CHANGE DATE <= '2019-08-16'
+WITH pricerank AS (
     SELECT 
         product_id,
         new_price,
-        dense_rank() over (partition by product_id order by change_date desc) as rn 
+        DENSE_RANK() OVER (PARTITION BY product_id ORDER BY change_date DESC) AS rnk 
     FROM 
-        Products 
+        products
     WHERE 
         change_date <= '2019-08-16'
-)
+
+) 
 SELECT 
     product_id,
-    new_price as price 
+    new_price AS price
 FROM 
-    RankPrices
+    pricerank
 WHERE 
-    rn =1
+    rnk=1
 
 UNION ALL 
 
-SELECT 
-    product_id ,
-    10 as price
+SELECT
+    product_id,
+    10 AS price
 FROM 
-    Products 
+    products
 GROUP BY 
-    product_id 
-HAVING 
-    MIN(change_date) > '2019-08-16';
+    product_id
+HAVING
+    MIN(change_date) > '2019-08-16'
