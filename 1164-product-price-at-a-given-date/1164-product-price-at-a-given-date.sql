@@ -1,4 +1,4 @@
-/* Write your T-SQL query statement below */
+-- Write your PostgreSQL query statement below
 -- FIND THE LATEST PRICE OF EACH PRODUCT WHERE CHANGE DATE <= '2019-08-16'
 WITH pricerank AS (
     SELECT 
