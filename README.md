@@ -31,7 +31,7 @@ Comparing these methodologies side-by-side highlights the strengths of each tool
 
 ##  Repository Structure
 
-The repository is organized into **44 independent directories**. Each directory represents a unique business case or data manipulation challenge and contains:
+The repository is organized into **70 independent directories**. Each directory represents a unique business case or data manipulation challenge and contains:
 * `problem_description.md`: A detailed explanation of the business scenario, input schemas, and the expected output.
 * `solution.sql`: The optimized SQL query designed to resolve the challenge.
 * `solution.py`: The Python script utilizing Pandas to achieve the exact same result programmatically.
