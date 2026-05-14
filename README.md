@@ -43,9 +43,9 @@ The repository is organized into **70 independent directories**. Each directory 
  ┣ 📂 02_Rolling_Average_Revenue
  ┣ 📂 03_Employee_Hierarchy_Mapping
  ┣ 📂 ...
- ┣ 📂 43_Duplicate_Record_Detection
- ┗ 📂 44_Cohort_Behavior_Tracking
+ ┣ 📂 69_Duplicate_Record_Detection
+ ┗ 📂 70_Cohort_Behavior_Tracking
 ```
 ###  Why This Matters
 
-Translating mathematical concepts into logical data solutions is my core strength. By solving 44 specific scenarios in both SQL and Pandas, I have developed a deep intuition for when to push compute loads to the database (SQL) versus when to process data locally in memory (Python). This dual-faceted approach is critical for building scalable ETL pipelines, optimizing dashboards, and preparing pristine datasets for statistical modeling.
+Translating mathematical concepts into logical data solutions is my core strength. By solving 70 specific scenarios in both SQL and Pandas, I have developed a deep intuition for when to push compute loads to the database (SQL) versus when to process data locally in memory (Python). This dual-faceted approach is critical for building scalable ETL pipelines, optimizing dashboards, and preparing pristine datasets for statistical modeling.
