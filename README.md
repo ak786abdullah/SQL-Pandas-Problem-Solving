@@ -9,7 +9,7 @@
 
 Welcome to my **SQL & Pandas Problem-Solving** repository. As a mathematically-trained Data Analyst, I believe that the ability to manipulate, clean, and extract insights from raw data is the cornerstone of effective business intelligence. 
 
-This repository contains **70+ distinct, complex data challenges**, carefully curated to test and expand upon advanced business logic. To demonstrate a holistic understanding of data engineering and analysis, **every single problem in this repository is solved using two completely different paradigms:**
+This repository contains **70 distinct, complex data challenges**, carefully curated to test and expand upon advanced business logic. To demonstrate a holistic understanding of data engineering and analysis, **every single problem in this repository is solved using two completely different paradigms:**
 1.  **Relational Database Queries:** Pure, optimized SQL.
 2.  **Programmatic Data Wrangling:** Python's Pandas library.
 
