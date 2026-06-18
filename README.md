@@ -1,51 +1,136 @@
-#  SQL & Pandas Problem-Solving Repository
+# SQL & Pandas Problem Solving
 
-[![Python](https://img.shields.io/badge/Python-3.8+-blue.svg)](https://www.python.org/)
-[![Pandas](https://img.shields.io/badge/Pandas-Data_Manipulation-150458.svg)](https://pandas.pydata.org/)
-[![SQL](https://img.shields.io/badge/SQL-Advanced_Queries-F80000.svg)](https://en.wikipedia.org/wiki/SQL)
-[![Author](https://img.shields.io/badge/Author-Muhammad_Abdullah-success.svg)](https://www.linkedin.com/in/your-linkedin-profile)
+![Python](https://img.shields.io/badge/Python-3.8+-blue.svg)
+![Pandas](https://img.shields.io/badge/Pandas-Data_Manipulation-150458.svg)
+![SQL](https://img.shields.io/badge/SQL-Advanced_Queries-F80000.svg)
+![Problems](https://img.shields.io/badge/Problems_Solved-44+-success.svg)
+![Platforms](https://img.shields.io/badge/Platforms-LeetCode%20%7C%20HackerRank%20%7C%20GFG-orange.svg)
 
-##  Project Overview
+A structured collection of **44+ data problems** sourced from LeetCode, HackerRank, and GeeksForGeeks — each solved in both **SQL** and **Python (Pandas)**. Built to sharpen real-world data analysis skills and demonstrate interview-ready proficiency in two of the most in-demand data tools.
 
-Welcome to my **SQL & Pandas Problem-Solving** repository. As a mathematically-trained Data Analyst, I believe that the ability to manipulate, clean, and extract insights from raw data is the cornerstone of effective business intelligence. 
+---
 
-This repository contains **70 distinct, complex data challenges**, carefully curated to test and expand upon advanced business logic. To demonstrate a holistic understanding of data engineering and analysis, **every single problem in this repository is solved using two completely different paradigms:**
-1.  **Relational Database Queries:** Pure, optimized SQL.
-2.  **Programmatic Data Wrangling:** Python's Pandas library.
+## What's Inside
 
-Comparing these methodologies side-by-side highlights the strengths of each tool—whether it is the declarative power of SQL for server-side processing or the programmatic flexibility of Pandas for in-memory transformations.
+Every problem folder contains a complete, self-contained solution covering a distinct business scenario or data manipulation challenge. Problems span topics like employee hierarchies, sales analytics, product pricing, customer behavior, and game play analysis — the kinds of problems that regularly appear in data analyst interviews.
 
-##  Key Competencies Demonstrated
+Each solution is implemented twice:
 
-###  SQL Expertise
-* **Window Functions:** Extensive use of `LAG()`, `LEAD()`, `RANK()`, `DENSE_RANK()`, and `ROW_NUMBER()` for running totals, moving averages, and top-N analyses.
-* **Common Table Expressions (CTEs):** Breaking down incredibly complex, nested queries into readable, modular, and maintainable logic.
-* **Advanced Joins:** Mastering `INNER`, `LEFT`, `RIGHT`, `FULL OUTER`, and complex `SELF JOINS` to map hierarchical data and resolve duplicate records.
-* **Aggregations & Grouping:** Deep dives into `GROUP BY`, `HAVING`, and conditional aggregations (`CASE WHEN` within `SUM`/`COUNT`).
+- **SQL** — optimized relational query using standard SQL constructs
+- **Python (Pandas)** — equivalent logic implemented programmatically with DataFrames
 
-###  Pandas Expertise
-* **Vectorized Operations:** Leveraging Pandas and NumPy for hardware-efficient, loop-free data transformations.
-* **Data Merging & Concatenation:** Replicating complex SQL joins using `pd.merge()`, `pd.concat()`, and strategic index alignments.
-* **Advanced Grouping:** Utilizing `.groupby()`, `.agg()`, and `.transform()` to perform multi-level aggregations and broadcast metrics back to original DataFrames.
-* **Data Cleaning:** Handling missing values, implementing probabilistic imputation, applying regex for string manipulation, and standardizing varied data types.
+This dual approach isn't just for practice. It builds the intuition for *when* to use each tool — SQL for server-side, set-based operations; Pandas for flexible, in-memory transformations where programmatic control matters.
 
-##  Repository Structure
+---
 
-The repository is organized into **70 independent directories**. Each directory represents a unique business case or data manipulation challenge and contains:
-* `problem_description.md`: A detailed explanation of the business scenario, input schemas, and the expected output.
-* `solution.sql`: The optimized SQL query designed to resolve the challenge.
-* `solution.py`: The Python script utilizing Pandas to achieve the exact same result programmatically.
-* `dataset.csv` (where applicable): Sample data used to validate the logic.
+## Skills Demonstrated
 
-```text
-📦 SQL-Pandas-Problem-Solving
- ┣ 📂 01_Customer_Retention_Analysis
- ┣ 📂 02_Rolling_Average_Revenue
- ┣ 📂 03_Employee_Hierarchy_Mapping
- ┣ 📂 ...
- ┣ 📂 69_Duplicate_Record_Detection
- ┗ 📂 70_Cohort_Behavior_Tracking
+### SQL
+- Window functions: `RANK()`, `DENSE_RANK()`, `ROW_NUMBER()`, `LAG()`, `LEAD()`
+- Common Table Expressions (CTEs) for readable, modular query logic
+- Join types: `INNER`, `LEFT`, `RIGHT`, `SELF JOIN`, `FULL OUTER`
+- Aggregation and filtering: `GROUP BY`, `HAVING`, conditional aggregations with `CASE WHEN`
+- Subqueries and correlated subqueries
+- Date-based filtering and time-series logic
+
+### Pandas
+- DataFrame merging and joining with `pd.merge()` and `pd.concat()`
+- Grouping and aggregation with `.groupby()`, `.agg()`, `.transform()`
+- Vectorized operations for efficient, loop-free transformations
+- Handling nulls, deduplication, and data type normalization
+- Applying window-style logic using `.rank()`, `.shift()`, and cumulative methods
+
+---
+
+## Problem List
+
+| # | Problem | Topics |
+|---|---------|--------|
+| 175 | Combine Two Tables | LEFT JOIN, NULL handling |
+| 176 | Second Highest Salary | Subquery, LIMIT/OFFSET |
+| 177 | Nth Highest Salary | Dynamic SQL, Window functions |
+| 178 | Rank Scores | `DENSE_RANK()` |
+| 180 | Consecutive Numbers | Self-join, `LAG()` |
+| 181 | Employees Earning More Than Managers | Self-join |
+| 182 | Duplicate Emails | `GROUP BY`, `HAVING` |
+| 183 | Customers Who Never Ordered | `LEFT JOIN`, `IS NULL` |
+| 184 | Department Highest Salary | Correlated subquery, Window functions |
+| 196 | Delete Duplicate Emails | DML, Self-join |
+| 197 | Rising Temperature | `LAG()`, Date functions |
+| 511 | Game Play Analysis I | `MIN()`, `GROUP BY` |
+| 550 | Game Play Analysis IV | `LAG()`, retention logic |
+| 570 | Managers with at Least 5 Direct Reports | `GROUP BY`, `HAVING`, JOIN |
+| 577 | Employee Bonus | `LEFT JOIN`, `IS NULL` |
+| 584 | Find Customer Referee | `IS NULL`, `OR` logic |
+| 585 | Investments in 2016 | Multi-condition filtering |
+| 586 | Customer Placing Largest Number of Orders | `GROUP BY`, `ORDER BY`, `LIMIT` |
+| 595 | Big Countries | `OR`, filtering |
+| 596 | Classes with at Least 5 Students | `GROUP BY`, `HAVING` |
+| 602 | Friend Requests II | `UNION ALL`, aggregation |
+| 607 | Sales Person | `NOT IN`, multi-table joins |
+| 608 | Tree Node | `CASE WHEN`, hierarchical data |
+| 610 | Triangle Judgement | `CASE WHEN`, conditional logic |
+| 619 | Biggest Single Number | Subquery, `MAX` with condition |
+| 620 | Not Boring Movies | Filtering, modulo operator |
+| 626 | Exchange Seats | `CASE WHEN`, `MOD()` |
+| 1045 | Customers Who Bought All Products | `GROUP BY`, `HAVING COUNT DISTINCT` |
+| 1050 | Actors and Directors Cooperated 3+ Times | `GROUP BY`, `HAVING` |
+| 1068 | Product Sales Analysis I | JOIN, filtering |
+| 1070 | Product Sales Analysis III | Window functions, first-year logic |
+| 1075 | Project Employees I | `AVG()`, JOIN |
+| 1084 | Sales Analysis III | Date filtering, `NOT IN` |
+| 1148 | Article Views I | Self-referencing filter |
+| 1158 | Market Analysis I | LEFT JOIN, conditional aggregation |
+| 1164 | Product Price at a Given Date | `CASE WHEN`, date filtering |
+| 1179 | Reformat Department Table | Pivot / conditional aggregation |
+| 1211 | Queries Quality and Percentage | `AVG()`, `CASE WHEN` |
+| 1251 | Average Selling Price | Weighted average, date range join |
+| 1327 | Products Ordered in a Period | Date filtering, aggregation |
+| 1378 | Replace Employee ID with Unique Identifier | LEFT JOIN |
+| 1407 | Top Travellers | LEFT JOIN, `COALESCE`, `ORDER BY` |
+
+---
+
+## Repository Structure
+
 ```
-###  Why This Matters
+SQL-Pandas-Problem-Solving/
+│
+├── 0175-combine-two-tables/
+│   ├── solution.sql
+│   └── solution.py
+│
+├── 0176-second-highest-salary/
+│   ├── solution.sql
+│   └── solution.py
+│
+├── ...
+│
+└── 1407-top-travellers/
+    ├── solution.sql
+    └── solution.py
+```
 
-Translating mathematical concepts into logical data solutions is my core strength. By solving 70 specific scenarios in both SQL and Pandas, I have developed a deep intuition for when to push compute loads to the database (SQL) versus when to process data locally in memory (Python). This dual-faceted approach is critical for building scalable ETL pipelines, optimizing dashboards, and preparing pristine datasets for statistical modeling.
+Each folder is named with the problem number and title for easy navigation. Solutions are standalone — no shared dependencies or setup required.
+
+---
+
+## How to Use This Repo
+
+**Browse by topic** — use the problem list above to find challenges covering a specific concept (e.g., window functions, self-joins, pivot logic).
+
+**Compare approaches** — open the `.sql` and `.py` files side-by-side to see how the same logic translates across paradigms.
+
+**Run locally** — SQL solutions are compatible with MySQL (as used on LeetCode). Python solutions require `pandas` and `numpy`.
+
+```bash
+pip install pandas numpy
+```
+
+---
+
+## About
+
+This repository is part of an ongoing effort to build a practical, portfolio-ready foundation in data analytics. Problems are tracked and synced automatically using [LeetHub v4](https://github.com/gaulghost).
+
+**Connect:** [LinkedIn](https://www.linkedin.com/in/your-linkedin-profile) · [GitHub](https://github.com/ak786abdullah)
