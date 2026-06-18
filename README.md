@@ -133,4 +133,4 @@ pip install pandas numpy
 
 This repository is part of an ongoing effort to build a practical, portfolio-ready foundation in data analytics. Problems are tracked and synced automatically using [LeetHub v4](https://github.com/gaulghost).
 
-**Connect:** [LinkedIn](https://www.linkedin.com/in/your-linkedin-profile) · [GitHub](https://github.com/ak786abdullah)
+**Connect:** [LinkedIn](https://www.linkedin.com/in/muhammad-abdullah-a7861a3a2/) · [GitHub](https://github.com/ak786abdullah)
