@@ -1,15 +1,22 @@
 # Write your MySQL query statement below
+-- requirements :
+-- users should be unbanned
+-- we have to find number of canceled request 
+-- and number of total requests 
+-- to find cancellation rate
+-- date should be between "2013-10-01" and "2013-10-03" 
 SELECT 
-    t.request_at AS Day,
-    ROUND(SUM(t.status != 'completed') / COUNT(t.status),2) AS 'Cancellation Rate'
+    t.request_at as Day,
+    ROUND(SUM(status != 'completed') / COUNT(*),2) AS 'Cancellation Rate'
 FROM 
-    Trips t
-    JOIN Users A ON t.driver_id=A.users_id AND A.banned='No'
-    JOIN Users B ON t.client_id=B.users_id AND B.banned='No'
+    Trips t join Users c ON c.users_id=t.client_id AND c.banned ='No'
+    join Users d ON d.users_id=t.driver_id AND d.banned ='No'
 WHERE 
-    t.request_at BETWEEN "2013-10-01" and "2013-10-03" 
+    t.request_at between '2013-10-01' and '2013-10-03'
 GROUP BY 
-t.request_at
+    t.request_at
+ORDER BY 
+    Day
 
 
 -- Synced seamlessly with LeetHub Pro
