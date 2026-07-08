@@ -10,3 +10,8 @@ WHERE
     t.request_at BETWEEN "2013-10-01" and "2013-10-03" 
 GROUP BY 
 t.request_at
+
+
+-- Synced seamlessly with LeetHub Pro
+-- Pro features: https://bit.ly/leethubpro | Free version: https://bit.ly/leethubv4
+-- Get it here: https://chromewebstore.google.com/detail/bcilpkkbokcopmabingnndookdogmbna
