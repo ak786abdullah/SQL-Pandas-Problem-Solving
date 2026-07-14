@@ -1,1 +1,0 @@
-<h2><a href="https://leetcode.com/problems/consecutive-numbers/">180. Consecutive Numbers</a></h2><h3>Middle</h3><hr>
