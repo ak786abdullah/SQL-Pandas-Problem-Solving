@@ -1,1 +1,0 @@
-<h2><a href="https://leetcode.com/problems/combine-two-tables/">175. Combine Two Tables</a></h2><h3>Easy</h3><hr>
