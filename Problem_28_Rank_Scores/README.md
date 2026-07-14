@@ -1,0 +1,1 @@
+<h2><a href="https://leetcode.com/problems/rank-scores/">178. Rank Scores</a></h2><h3>Middle</h3><hr>
