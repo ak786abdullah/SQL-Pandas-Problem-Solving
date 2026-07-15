@@ -6,7 +6,7 @@
 ![Problems](https://img.shields.io/badge/Problems_Solved-70+-success.svg)
 ![Platforms](https://img.shields.io/badge/Platforms-LeetCode%20%7C%20HackerRank%20%7C%20GFG-orange.svg)
 
-A structured collection of **70+ data problems** sourced from LeetCode, HackerRank, and GeeksForGeeks — each solved in both **SQL** and **Python (Pandas)**. Built to sharpen real-world data analysis skills and demonstrate interview-ready proficiency in two of the most in-demand data tools.
+A structured collection of **90+ data problems** sourced from LeetCode, HackerRank, and GeeksForGeeks — each solved in both **SQL** and **Python (Pandas)**. Built to sharpen real-world data analysis skills and demonstrate interview-ready proficiency in two of the most in-demand data tools.
 
 ---
 
